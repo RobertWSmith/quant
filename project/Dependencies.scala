@@ -26,6 +26,8 @@ object Dependencies {
     "org.scalatest" %% "scalatest" % scalatestVersion % Test
   lazy val slf4j: ModuleID = "org.slf4j" % "slf4j-api" % slf4jVersion
   lazy val sprayJson: ModuleID = "io.spray" %% "spray-json" % sprayJsonVersion
+  lazy val typesafeConfig: ModuleID =  "com.typesafe" % "config" % "1.3.4"
+
 
   def scalaCompiler(scalaVersion: String): ModuleID =
     "org.scala-lang" % "scala-compiler" % scalaVersion
@@ -48,6 +50,7 @@ object Dependencies {
     logbackClassic,
     scalatest,
     slf4j,
-    sprayJson
+    sprayJson,
+    typesafeConfig
   )
 }

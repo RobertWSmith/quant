@@ -12,7 +12,7 @@ object CompilerOptions {
     "-language:higherKinds",
     "-language:implicitConversions",
     "-unchecked",
-    "-Xfatal-warnings",
+//    "-Xfatal-warnings",
     "-Xlint",
     "-Yno-adapted-args",
     "-Ywarn-dead-code", // N.B. doesn't work well with the ??? hole
@@ -35,7 +35,7 @@ object CompilerOptions {
     "-language:implicitConversions", // Allow definition of implicit functions called views
     "-unchecked", // Enable additional warnings where generated code depends on assumptions.
     "-Xcheckinit", // Wrap field accessors to throw an exception on uninitialized access.
-    "-Xfatal-warnings", // Fail the compilation if there are any warnings.
+//    "-Xfatal-warnings", // Fail the compilation if there are any warnings.
     "-Xfuture", // Turn on future language features.
     "-Xlint:adapted-args", // Warn if an argument list is modified to match the receiver.
     "-Xlint:by-name-right-associative", // By-name parameter of right associative operator.
@@ -70,7 +70,7 @@ object CompilerOptions {
     "-Ywarn-unused:patvars", // Warn if a variable bound in a pattern is unused.
     "-Ywarn-unused:privates", // Warn if a private member is unused.
     "-Ywarn-value-discard" // Warn when non-Unit expression results are unused.
-//    "-Yno-imports" // no automatic imports at all; all symbols must be imported explicitly
+    // "-Yno-imports" // no automatic imports at all; all symbols must be imported explicitly
   )
 
   def scalacOptionsVersion(scalaVersion: String): Seq[String] = {
